@@ -5,13 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Um</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="global.css" rel="stylesheet" type="text/css" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <h1>UM</h1>
-  <h2>A card game like UNO</h2>
-  <script src="script.js"></script>
+  <center>
+    <h1>UM</h1>
+    <h2>A card game like UNO</h2>
+    <a href="host.html">Start a Game</a>
+    <a href="join.html">Join a Game</a>
+    <a id="shareBtn" href="javascript:void(0);">Share this page!</a>
+  </center>
+  <script>
+    if (navigator.share) {
+      document.querySelector("#shareBtn").onclick=function() {
+        navigator.share({
+          title: document.title,
+          text: "Free UNO-like online game",
+          url: window.location.href
+        })
+      }
+    } else {
+      document.querySelector("#shareBtn").href=`mailto:?subject=Play UM&body=Come play UM, a free UNO-like online game.`
+    }
+  </script>
 </body>
-
 </html>

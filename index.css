@@ -1,0 +1,19 @@
+center > * {
+  color:white;
+}
+
+center > h1 {
+  font-size:72px;
+}
+center > h2 {
+  font-size:48px;
+}
+
+body {
+  background:#b30000;
+}
+
+a {
+  display:block;
+  font-size:32px;
+}
