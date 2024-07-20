@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="global.css" rel="stylesheet" type="text/css" />
+  <link href="join.css" rel="stylesheet" type="text/css" />
+  <title>Join a Game</title>
+</head>
+<body>
+  <input oninput="typeEvent(this)" type="text" placeholder="CODE" maxlength="4">
+  <input id="namebox" style="display:none;" type="text" placeholder="Enter name">
+  <script>
+    function typeEvent(box) {
+      if (box.value.length==4) {
+        // skip checks for now
+
+        document.querySelector(`#namebox`).style.display='block'
+        box.style.display='none'
+      }
+    }
+  </script>
+</body>
+</html>

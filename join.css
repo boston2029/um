@@ -1,0 +1,28 @@
+input[maxlength="4"] {
+  text-transform:uppercase;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:25pt;
+  text-align:center;
+  border-radius:50px;
+  border:none;
+  outline:none;
+}
+
+input#namebox {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:25pt;
+  text-align:center;
+  border-radius:50px;
+  border:none;
+  outline:none;
+}
+
+body {
+  background:#b30000;
+}
